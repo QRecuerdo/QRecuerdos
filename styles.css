@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec, #bcccdc);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    background: #f7fafc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.cover-photo {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -75px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #1a202c;
+}
+
+.dates {
+    font-size: 1.2em;
+    color: #718096;
+}
+
+.biography, .gallery, .video, .location, .condolences {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.biography p, .location p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-images img {
+    width: calc(33.333% - 10px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-size: 1.1em;
+    color: #2d3748;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background: #2b6cb0;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #2c5282;
+}
+
+#condolenceMessages {
+    margin-top: 20px;
+}
+
+#condolenceMessages h3 {
+    font-size: 1.5em;
+    color: #1a202c;
+}
+
+#condolenceMessages .message {
+    background: #f7fafc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
