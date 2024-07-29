@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRecuerdos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <img class="cover-photo" src="cover.jpg" alt="Foto de portada">
+            <img class="profile-photo" src="profile.jpg" alt="Foto de perfil">
+            <h1 class="name">Juan Pérez</h1>
+            <p class="dates">La Paz, Bolivia - 15 de Marzo de 2022</p>
+        </header>
+        <section class="biography">
+            <h2>Biografía</h2>
+            <p>Juan Pérez fue una persona querida por todos. Nacido en La Paz, dedicó su vida a ayudar a los demás y dejó un legado de amor y compasión.</p>
+        </section>
+        <section class="gallery">
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery-images">
+                <img src="image1.jpg" alt="Imagen 1">
+                <img src="image2.jpg" alt="Imagen 2">
+                <img src="image3.jpg" alt="Imagen 3">
+            </div>
+        </section>
+        <section class="video">
+            <h2>Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section class="location">
+            <h2>Ubicación</h2>
+            <p>Cementerio General, La Paz</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799145278!2d-74.25986702901767!3d40.69767006758895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDDsDQxJzUwLjMiTiA3NMKwMTUnNDMuNCJX!5e0!3m2!1ses-419!2sbo!4v1618245357392!5m2!1ses-419!2sbo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+        <section class="condolences">
+            <h2>Enviar Condolencia</h2>
+            <form id="condolenceForm">
+                <label for="fullName">Nombre Completo:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <label for="message">Condolencia:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar Condolencia</button>
+            </form>
+            <div id="condolenceMessages">
+                <h3>Condolencias</h3>
+                <!-- Mensajes de condolencias se cargarán aquí -->
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
